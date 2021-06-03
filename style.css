@@ -1,9 +1,7 @@
-body {
-  background-color: #f6f5f5;
-  margin: 0px;
-  padding: 0px;
+.logo {
+  height: 60px;
+  width: 250px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,6 +9,7 @@ nav {
   height: 60px;
   background-color: #ffffff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
 }
 ul {
   list-style: none;
@@ -25,12 +24,6 @@ nav ul li a {
   margin: 30px;
   font-family: Copperplate, Papyrus, fantasy;
   color: #505050;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
-}
-
-.logo {
-  height: 60px;
-  width: 250px;
-  margin: 0px;
 }

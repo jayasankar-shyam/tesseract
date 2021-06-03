@@ -7,6 +7,13 @@ body {
   padding: 0px;
 }
 /*NAVBAR*/
+
+.navb {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+}
 .logo1 {
   height: 60px;
   width: 150px;
@@ -48,6 +55,7 @@ nav ul li a {
   margin-top: 10px;
   margin-left: 30px;
   margin-right: auto;
+  border-radius: 30px;
 }
 /*ABOUT*/
 .about-container {
@@ -78,7 +86,21 @@ nav ul li a {
 
 /*Speakers*/
 
-.my-card {
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -91,27 +113,37 @@ nav ul li a {
   overflow: hidden;
   transition: 0.5s;
 }
-
-.my-card:hover {
+.card:hover {
   box-shadow: 0px 0px 8px #c81a3b;
 }
 
-.my-card img {
-  max-height: 250px;
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
 }
-.my-card-body {
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
-.my-card-body h5 {
-  text-transform: capitalize;
-  line-height: 25px;
-  font-size: 25px;
-}
-
-.my-card-body p {
-  margin: 10px 0;
-  color: #f7941d;
+.button:hover {
+  background-color: #555;
 }

@@ -6,6 +6,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
+/*NAVBAR*/
 .logo1 {
   height: 60px;
   width: 150px;
@@ -40,6 +41,15 @@ nav ul li a {
   font-weight: 700;
   align-items: right;
 }
+/*POSTER*/
+
+.poster {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: auto;
+}
+/*ABOUT*/
 .about-container {
   width: 90%;
   height: 70%;
@@ -65,17 +75,9 @@ nav ul li a {
   margin-left: 50px;
   margin-right: 30px;
 }
-.poster {
-  width: 90%;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: auto;
-}
-.logot {
-  margin-left: 5px;
-  height: 60px;
-  width: 60px;
-}
+
+/*Speakers*/
+
 .my-card {
   display: flex;
   -ms-flex-direction: column;

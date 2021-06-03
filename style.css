@@ -11,9 +11,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
   background-color: #ffffff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
 }
 ul {
   list-style: none;
@@ -27,9 +27,10 @@ nav ul {
 nav ul li a {
   margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #505050;
-  font-size: 18px;
+  color: black;
+  font-size: 20px;
   font-weight: 700;
+  align-items: right;
 }
 .about-container {
   width: 90%;
@@ -38,12 +39,7 @@ nav ul li a {
   border-radius: 50px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   display: flex;
-  color: #403e3e;
-  font-family: "Cambria";
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
-  justify-content: space-evenly;
+
   align-items: center;
   margin-left: 30px;
   margin-top: 30px;

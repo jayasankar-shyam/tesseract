@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -36,45 +37,56 @@
   </head>
 
   <body>
+    <script>
+      
+        let mybutton = document.getElementById("btn-back-to-top");
+        
+        
+        window.onscroll = function () {
+          scrollFunction();
+        };
+        
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        mybutton.addEventListener("click", backToTop);
+        
+        function backToTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+              </script>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img class="logo2" src="imgs/logot.png" alt="logo" />
-      <a class="navbar-brand" href="index.html#home"
-        ><img class="logo1" src="imgs/banner.png"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      ></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#workshops">Workshops</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="schedule.html">Schedule</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="imgs/logot.png" class="logo2"><img class="logo1"src="imgs/banner.png" alt="logo"></a>   
+        <a style="text-decoration:none;" href="index.html#about">About</a>
+        <a style="text-decoration:none;" href="index.html#speakers">Speakers</a>
+        <a style="text-decoration:none;" href="index.html#workshops">Workshops</a>
+        <a style="text-decoration:none;" href="schedule.html">Schedule</a>
+        <a style="text-decoration:none;" href="index.html#sponsors">Sponsors</a>
+        <a style="text-decoration:none;" href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
+      <!--SCHEDULE-->
+      <h1>Workshop sessions</h1>
     <div class="container">
     <table id="dates">
       <tr>

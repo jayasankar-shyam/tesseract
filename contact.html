@@ -42,6 +42,43 @@
   </head>
 </html>
 <body>
+    <!--SCROLL TO THE TOP-->
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <span class="material-icons">
+          arrow_upward
+          </span>
+</button>
+    <script>
+      
+let mybutton = document.getElementById("btn-back-to-top");
+
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+      </script>
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img class="logo2" src="imgs/logot.png" alt="logo" />

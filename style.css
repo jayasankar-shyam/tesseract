@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f6f5f5;
+  background-color: #f5f6f6;
   margin: 0px;
   padding: 0px;
 }
@@ -44,6 +44,7 @@ hr.new2:after {
   padding: 0 0.25em;
   background: white;
 }
+
 h3 {
   text-align: center;
 }
@@ -249,4 +250,31 @@ nav ul li a {
   border-radius: 35px 0;
   overflow: hidden;
   transition: 0.5s;
+}
+
+/*SCEDULE*/
+table {
+  text-align: center;
+  margin-top: 30px;
+  background: rgb(163, 47, 62);
+  font-size: 22px;
+}
+#dates {
+  font-family: "Mate SC", serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#dates td {
+  border: 1px solid rgb(105, 72, 72);
+  padding: 8px;
+}
+
+#dates tr:nth-child(even) {
+  background-color: #ffb1b1;
+}
+
+#dates tr:hover {
+  background-color: #ddd;
+  box-shadow: 0px 0px 8px #c81a3b;
 }

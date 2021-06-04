@@ -47,6 +47,7 @@ hr.new2:after {
 
 h3 {
   text-align: center;
+  padding-top: 10px;
 }
 h6 {
   text-align: center;
@@ -219,6 +220,12 @@ nav ul li a {
   margin-bottom: 16px;
   padding: 0 8px;
 }
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 100%;
+    display: block;
+  }
+}
 
 .overlay {
   position: absolute;
@@ -250,6 +257,7 @@ nav ul li a {
   border-radius: 35px 0;
   overflow: hidden;
   transition: 0.5s;
+  height: 400px;
 }
 
 /*SCEDULE*/

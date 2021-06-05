@@ -11,16 +11,7 @@ h1 {
   text-align: center;
 }
 
-.contactsj {
-  width: 90%;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: auto;
-  border-radius: 20px;
-}
-.contactsj:hover {
-  box-shadow: 0px 0px 8px #66ff00;
-}
+
 
 hr.new1 {
   height: 12px;
@@ -222,6 +213,17 @@ a {
 
 .button:hover {
   background-color: #555;
+}
+/*CONTACT*/
+.contactsj {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: auto;
+  border-radius: 20px;
+}
+.contactsj:hover {
+  box-shadow: 0px 0px 8px #66ff00;
 }
 /*Back to top*/
 
